@@ -2,22 +2,27 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  console.log("Home Page");
+  // console.log("Home Page");
   res.render("index");
 });
 
-router.get("/about-us", (req, res) => {
-  console.log("About Page");
-  res.render("about-us");
+router.get("/our-firm", (req, res) => {
+  res.render("our-firm");
 });
 
-router.get("/contact", (req, res) => {
-  console.log("Contact Page");
-  res.render("contact");
+router.get("/contact-us", (req, res) => {
+  res.render("contact-us");
 });
 
-router.get("/services", (req, res) => {
-  console.log("Services Page");
+router.get("/our-attorneys", (req, res) => {
+  res.render("our-attorneys");
+});
+
+router.get("/news", (req, res) => {
+  res.render("news");
+});
+
+router.get("/gallery", (req, res) => {
   res.render("services");
 });
 
