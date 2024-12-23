@@ -1,0 +1,80 @@
+.case-study-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1.2822;
+  overflow: hidden;
+}
+
+.case-study-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 13, 12, 0.1) 0%,
+    rgba(2, 13, 12, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.case-study-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.case-study-box:hover img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.case-study-box-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: clamp(1.563rem, 4.808vw - 2.644rem, 3.125rem);
+  /* Clamp value 50px to 25px from 1920px to 1400px*/
+  z-index: 10;
+}
+
+.case-study-box-content .h4-title,
+.case-study-box-content .h4-title a {
+  color: var(--white-color);
+  transition: 0.3s;
+}
+
+.case-study-box-content .h4-title a:hover {
+  color: var(--primary-color);
+}
+
+.case-study-box-content p {
+  margin: 21px 0 30px;
+  color: var(--white-color);
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.case-study-box-text {
+  margin-bottom: -161px;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.case-study-box:hover .case-study-box-text {
+  margin-bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}

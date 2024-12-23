@@ -1,0 +1,41 @@
+.main-faq {
+  margin: var(--spacing) 0;
+}
+
+.faq-img-wp {
+  width: 100%;
+  position: relative;
+}
+
+.faq-img1 {
+  width: 100%;
+  aspect-ratio: 1/1.11794;
+  border-radius: 1rem 3rem;
+}
+
+.faq-img2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52.516%;
+  height: 31.928%;
+  border-radius: 8%;
+  z-index: 1;
+}
+
+.faq-img-wp .link-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 40%;
+  z-index: 10;
+}
+
+.faq-img-wp .link-btn:hover {
+  gap: 10px;
+}
+
+.faq-sec-content {
+  padding-left: 26px;
+}

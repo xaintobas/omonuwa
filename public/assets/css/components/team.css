@@ -1,0 +1,163 @@
+.main-special-team {
+  padding: var(--spacing) 0;
+  background: var(--bg-color);
+}
+
+.special-team-content {
+  padding-right: 26px;
+}
+
+.special-team-content .sub-title {
+  margin-bottom: 3px;
+}
+
+.special-team-content p {
+  margin-bottom: 17px;
+}
+
+.team-box {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.team-img-wp {
+  position: relative;
+}
+
+.team-img {
+  width: 100%;
+  aspect-ratio: 1/1.18302;
+  margin-bottom: 23px;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+}
+
+.team-box:hover .team-img img {
+  transform: scale(1.1);
+}
+
+.team-box p {
+  margin-bottom: 3px;
+}
+
+.team-box .h4-title a {
+  color: inherit;
+  transition: 0.3s;
+}
+
+.team-box .h4-title a:hover {
+  color: var(--primary-color);
+}
+
+.team-social {
+  position: absolute;
+  bottom: -3.87%;
+  right: 12.75%;
+  z-index: 10;
+}
+
+.team-social-share {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.team-social-share:hover,
+.team-social:hover .team-social-share,
+.team-social.active .team-social-share {
+  background: var(--primary-color);
+}
+
+.team-social-share img {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.team-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.team-social:hover ul {
+  pointer-events: auto;
+}
+
+.team-social ul li {
+  position: relative;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.team-social ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--white-color);
+  background: var(--secondary-color);
+  border-radius: 50%;
+  color: var(--white-color);
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.team-social ul li a:hover {
+  background: var(--primary-color);
+}
+
+.team-social ul li:nth-child(1) {
+  top: 150px;
+}
+
+.team-social ul li:nth-child(2) {
+  top: 100px;
+}
+
+.team-social ul li:nth-child(3) {
+  top: 50px;
+}
+
+.team-social.active ul li:nth-child(1),
+.team-social.active ul li:nth-child(2),
+.team-social.active ul li:nth-child(3) {
+  top: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .team-social-share:hover,
+  .team-social:hover .team-social-share {
+    background: var(--primary-color);
+  }
+
+  .team-social:hover ul li:nth-child(1),
+  .team-social:hover ul li:nth-child(2),
+  .team-social:hover ul li:nth-child(3) {
+    top: 0;
+  }
+}

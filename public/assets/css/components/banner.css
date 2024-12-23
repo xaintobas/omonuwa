@@ -1,0 +1,110 @@
+.main-banner {
+  position: relative;
+  padding-top: 157px;
+  background: var(--bg-color);
+  overflow: hidden;
+}
+
+.banner-content {
+  margin: 60px 0;
+}
+
+.banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 33px;
+}
+
+.banner-img {
+  position: relative;
+  padding-top: 49px;
+}
+
+.banner-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 81.134%;
+  aspect-ratio: 1 / 1.1163;
+  background: var(--primary-color);
+  opacity: 0.1;
+  border-radius: 59% 41% 35% 65% / 53% 36% 64% 47%;
+  animation: radius_animation 8s linear infinite alternate;
+  z-index: 0;
+}
+
+@keyframes radius_animation {
+  0% {
+    border-radius: 59% 41% 35% 65% / 53% 36% 64% 47%;
+  }
+
+  50% {
+    border-radius: 26% 74% 33% 67% / 67% 61% 39% 33%;
+  }
+
+  100% {
+    border-radius: 59% 41% 35% 65% / 53% 36% 64% 47%;
+  }
+}
+
+.banner-img:after {
+  content: "";
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  aspect-ratio: 1 / 0.87108;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
+  animation: radius_animation2 5s linear infinite alternate;
+  z-index: 2;
+}
+
+@keyframes radius_animation2 {
+  0% {
+    border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
+  }
+
+  50% {
+    border-radius: 39% 61% 49% 51% / 34% 23% 77% 66%;
+  }
+
+  100% {
+    border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
+  }
+}
+
+.banner-img img {
+  position: relative;
+  z-index: 5;
+}
+
+.banner-img .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 101px;
+  background: var(--overlay-color);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.main-banner .bg-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 25.5vw;
+  line-height: 0.78;
+  font-family: var(--title-font);
+  color: var(--white-color);
+  opacity: 0.4;
+  pointer-events: none;
+  animation: blink_text 1s linear infinite alternate;
+  z-index: 0;
+}

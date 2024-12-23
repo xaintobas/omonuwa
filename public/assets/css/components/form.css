@@ -1,0 +1,175 @@
+.form-box {
+  display: block;
+  position: relative;
+  font-size: 0;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.form-box label {
+  font-size: 16px;
+  line-height: 26.08px;
+  color: var(--light-color);
+  font-weight: bold;
+  margin-bottom: 6.08px;
+}
+
+.form-box.checkbox label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.form-box label input {
+  margin-right: 4.96px;
+}
+
+.form-input-box {
+  position: relative;
+}
+
+.form-input-box img {
+  position: absolute;
+  top: 50%;
+  left: 15.04px;
+  transform: translate(0, -50%);
+  width: 12px;
+  height: auto;
+}
+
+.form-input {
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--common-color);
+  border: 1px solid var(--common-color);
+  outline: none;
+  padding: 17px 30px;
+  border-radius: 100px;
+}
+
+select.form-input option {
+  background: var(--black-color);
+}
+
+textarea.form-input {
+  height: 120px;
+  resize: none;
+  padding: 18px 30px;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.form-input::placeholder {
+  color: var(--common-color);
+  opacity: 1;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.form-element {
+  position: relative;
+}
+
+.form-element i {
+  position: absolute;
+  top: 15.04px;
+  right: 24.96px;
+  pointer-events: none;
+  font-size: 18.08px;
+  color: var(--white-color);
+}
+
+select.form-input {
+  padding-right: 44.96px !important;
+}
+
+.datepicker.dropdown-menu {
+  font-size: 12.96px;
+}
+
+.date .form-input {
+  border-radius: 10.08px !important;
+  margin-left: 0 !important;
+}
+
+.datepicker table tr td.active {
+  background: var(--primary-color) !important;
+}
+
+.for-des {
+  display: inline-block !important;
+}
+
+.for-mob {
+  display: none !important;
+}
+
+.main-subscribe {
+  position: relative;
+}
+
+.main-subscribe:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: var(--bg-color);
+  z-index: 0;
+}
+
+.subscribe-box {
+  width: 100%;
+  background: var(--secondary-color);
+  border-radius: 20px;
+  padding: 74px 50px 79px;
+}
+
+.subscribe-box .sub-title {
+  margin-bottom: 21px;
+}
+
+.subscribe-box .h3-title {
+  color: var(--white-color);
+  margin-bottom: 39px;
+}
+
+.subscribe-form {
+  max-width: 678px;
+  margin: auto;
+}
+
+.subscribe-form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.subscribe-form form .sec-btn {
+  flex-shrink: 0;
+}
+
+.subscribe-form form .sec-btn:hover {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.subscribe-form form .form-input {
+  background: var(--white-color);
+  border-color: var(--white-color);
+  flex: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,134 @@
+.site-footer {
+  position: relative;
+  background: var(--secondary-color);
+  padding-bottom: 31px;
+  overflow: hidden;
+}
+
+.footer-top {
+  padding: 111px 0 113px 0;
+}
+
+.h4-title.footer-title {
+  color: var(--white-color);
+  padding-bottom: 4px;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.h4-title.footer-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 61px;
+  height: 1px;
+  background: var(--primary-color);
+}
+
+.footer-info p {
+  margin-bottom: 23px;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 15px;
+  color: var(--white-color);
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.footer-link-wp {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-link ul li a {
+  display: inline-block;
+  color: var(--white-color);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-link ul li a:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.footer-contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-contact ul li .icon {
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 50%;
+  color: var(--white-color);
+  flex-shrink: 0;
+  font-size: 15px;
+}
+
+.footer-contact ul li .text a {
+  color: var(--white-color);
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.footer-contact ul li .text a:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.footer-bottom {
+  background: transparent;
+  height: 80px;
+  padding: 15px 30px;
+}
+
+.footer-bottom p {
+  color: var(--white-color);
+  text-align: center;
+}

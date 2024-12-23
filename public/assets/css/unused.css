@@ -1,0 +1,68 @@
+/*==========Loader CSS Start==========*/
+.loader-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--white-color);
+  z-index: 99999999;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/loader-center.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/loader-left-icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: rotate_left 1.3s linear infinite alternate;
+}
+
+.loader:after {
+  background-image: url("../images/loader-right-icon.svg");
+  animation: rotate_right 1.3s linear infinite alternate;
+}
+
+@keyframes rotate_left {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes rotate_right {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-18deg);
+  }
+}
+
+/*==========Loader CSS End==========*/
