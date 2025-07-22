@@ -33,7 +33,87 @@ const simplePages = [
     title: "Our Attorneys",
     layout: "./layouts/sub-layout",
   },
+
+  // BLOG ROUTE
+
   { path: "/news", title: "News", layout: "./layouts/sub-layout" },
+
+  {
+    path: "/blog/beyond-the-courtroom-the-strategic-advantage",
+    title:
+      "Beyond the Courtroom: The Strategic Advantage of Alternative Dispute Resolution (ADR) in Nigeria",
+    layout: "./layouts/blog-layout",
+  },
+
+  {
+    path: "/blog/how-strong-corporate-governance-builds-resilient-businesses",
+    title:
+      "How Strong Corporate Governance Builds Resilient Businesses in Nigeria",
+    layout: "./layouts/blog-layout",
+  },
+
+  {
+    path: "/blog/navigating-the-nigerian-investment-landscape",
+    title:
+      "Navigating the Nigerian Investment Landscape: Key Legal Considerations for Foreign Investors",
+    layout: "./layouts/blog-layout",
+  },
+
+  {
+    path: "/blog/the-bedrock-of-investment-upholding-the-sanctity-of-contracts",
+    title:
+      "The Bedrock of Investment: Upholding the Sanctity of Contracts in Nigeria's Energy Sector",
+    layout: "./layouts/blog-layout",
+  },
+
+  {
+    path: "/blog/the-critical-role-of-due-diligence-in-nigerian-real-rstate",
+    title:
+      "The Critical Role of Due Diligence in Nigerian Real Estate Transactions",
+    layout: "./layouts/blog-layout",
+  },
+
+  {
+    path: "/blog/your-most-valuable-asset-why-intellectual-property",
+    title:
+      "Your Most Valuable Asset: Why Intellectual Property Protection is Non-Negotiable for Nigerian Businesses",
+    layout: "./layouts/blog-layout",
+  },
+
+  // TEAM MEMBER ROUTES.
+
+  { path: "/team", title: "TEAM", layout: "./layouts/sub-layout" },
+
+  {
+    path: "/team/omoruyi-a-omonuwa",
+    title: "Omoruyi A. Omonuwa, SAN",
+    subTitle: "Principal Partner & Senior Advocate of Nigeria",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/amina-bello",
+    title: "Amina Bello",
+    subTitle: "Senior Associate",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/chinedu-okoro",
+    title: "Chinedu Okoro",
+    subTitle: "Associate",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/dr-ifeoma-okeke",
+    title: "Dr. (Mrs.) Ifeoma Okeke",
+    subTitle: "Of Counsel",
+    layout: "./layouts/team-layout",
+  },
+
+  // SERVICES ROUTE
+
   {
     path: "/areas-of-practice",
     title: "Areas of Practice",
