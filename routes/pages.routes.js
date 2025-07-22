@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const app = express();
 
 router.get("/", (req, res) => {
   // console.log("Home Page");
@@ -146,6 +147,38 @@ const simplePages = [
     layout: "./layouts/service-layout",
   },
 ];
+
+// CONTACT ROUTE
+app.post("/contact-us", (req, res) => {
+  const { firstName, lastName, email, phone, message } = req.body;
+
+  // Save to database
+  const sql =
+    "INSERT INTO contacts (firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?,  ?)";
+  db.query(sql, [firstName, lastName, email, phone, message], (err, result) => {
+    if (err) {
+      console.error("Database error:", err);
+      return res.send("Failed to save message.");
+    }
+
+    // Send email to Gmail
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: "New Contact Form Submission",
+      text: `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error("Email error:", error);
+        return res.send("Message saved, but email failed.");
+      }
+      res.render("contact", { success: true });
+      // res.send("Thank you! Your message has been sent and saved.");
+    });
+  });
+});
 
 simplePages.forEach((page) => {
   router.get(page.path, (req, res) => {

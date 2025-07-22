@@ -73,11 +73,12 @@
             receive a free and confidential initial consultation.
           </p>
           <div class="contact-form">
-            <form>
+            <form action="/contact-us" method="POST">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-box">
                     <input
+                      name="firstName"
                       type="text"
                       class="form-input"
                       placeholder="First Name*"
@@ -89,6 +90,7 @@
                 <div class="col-lg-6">
                   <div class="form-box">
                     <input
+                      name="lastName"
                       type="text"
                       class="form-input"
                       placeholder="Last Name*"
@@ -100,6 +102,7 @@
                 <div class="col-lg-6">
                   <div class="form-box">
                     <input
+                      name="email"
                       type="email"
                       class="form-input"
                       placeholder="Email Address*"
@@ -111,6 +114,7 @@
                 <div class="col-lg-6">
                   <div class="form-box">
                     <input
+                      name="phone"
                       type="number"
                       class="form-input"
                       placeholder="Phone No.*"
@@ -122,6 +126,7 @@
                 <div class="col-12">
                   <div class="form-box">
                     <textarea
+                      name="message"
                       class="form-input"
                       placeholder="Message..."
                     ></textarea>
