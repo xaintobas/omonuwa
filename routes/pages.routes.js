@@ -11,13 +11,6 @@ router.get("/", (req, res) => {
   });
 });
 
-// router.get("/our-attorneys", (req, res) => {
-//   res.render("our-attorneys", {
-//     layout: "./layouts/sub-layout",
-//     title: "Our Attorneys",
-//   });
-// });
-
 const simplePages = [
   {
     path: "/our-firm",
@@ -83,7 +76,11 @@ const simplePages = [
 
   // TEAM MEMBER ROUTES.
 
-  { path: "/team", title: "TEAM", layout: "./layouts/sub-layout" },
+  {
+    path: "/our-attorneys",
+    title: "OUR ATTORNEYS",
+    layout: "./layouts/sub-layout",
+  },
 
   {
     path: "/team/ezewanyi",
