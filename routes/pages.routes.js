@@ -86,30 +86,44 @@ const simplePages = [
   { path: "/team", title: "TEAM", layout: "./layouts/sub-layout" },
 
   {
-    path: "/team/omoruyi-a-omonuwa",
-    title: "Omoruyi A. Omonuwa, SAN",
-    subTitle: "Principal Partner & Senior Advocate of Nigeria",
-    layout: "./layouts/team-layout",
-  },
-
-  {
-    path: "/team/amina-bello",
-    title: "Amina Bello",
-    subTitle: "Senior Associate",
-    layout: "./layouts/team-layout",
-  },
-
-  {
-    path: "/team/chinedu-okoro",
-    title: "Chinedu Okoro",
+    path: "/team/ezewanyi",
+    title: "Ezewanyi Nwakpa Armstrong Esq",
     subTitle: "Associate",
     layout: "./layouts/team-layout",
   },
 
   {
-    path: "/team/dr-ifeoma-okeke",
-    title: "Dr. (Mrs.) Ifeoma Okeke",
-    subTitle: "Of Counsel",
+    path: "/team/favour",
+    title: "Favour Ifechukwude",
+    subTitle: "Associate",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/omonuwa",
+    title: "Dr. G. I. S. Omonuwa",
+    subTitle: "Founder",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/odaro",
+    title: "Odaro Omonuwa Esq",
+    subTitle: "Founding Member",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/adesuwa",
+    title: "Adesuwa Omonuwa Esq",
+    subTitle: "Principal",
+    layout: "./layouts/team-layout",
+  },
+
+  {
+    path: "/team/efua",
+    title: "Efua C. Ighalo Esq.",
+    subTitle: "Associate",
     layout: "./layouts/team-layout",
   },
 
